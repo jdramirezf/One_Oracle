@@ -1,4 +1,3 @@
-
 let numeroSecreto = generarNumeroSecreto();
 
 function asignacionTextoElemento(elemento, texto) {
@@ -12,12 +11,7 @@ function generarNumeroSecreto() {
 }
 
 function intentoUsuario() {
-    let numeroDelUsuario = parseInt(document.getElementById('NUMERO').value);
-    /*console.log(typeof(numeroDelUsuario));
-    console.log(typeof(numeroSecreto));
-    console.log(numeroSecreto);
-    console.log(numeroDelUsuario);
-    console.log(numeroSecreto === numeroDelUsuario);*/         
+    let numeroDelUsuario = parseInt(document.getElementById('NUMERO').value);    
     if (numeroSecreto === numeroDelUsuario) {
         asignacionTextoElemento('#PARRAFO', '¡Felicidades! Has adivinado el número secreto');
     } else {
